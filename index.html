@@ -1,0 +1,389 @@
+<!doctype html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>SPI FOCUS｜実戦模試</title><meta name="description" content="SPIの言語・非言語を、35分の実戦模試と詳しい解説で練習。問題別タイマーと段階的な難易度調整。"><style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap');
+:root{font-family:'Noto Sans JP',sans-serif;color:#19233b;background:#f5f7fb;font-synthesis:none;font-size:16px}*{box-sizing:border-box}body{margin:0}button,input{font:inherit}button,a{touch-action:manipulation}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.45}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #ffb83e;outline-offset:4px}header{height:88px;background:white;border-bottom:1px solid #e4e8ef;display:flex;align-items:center;gap:28px;padding:0 max(32px,calc((100vw - 1180px)/2))}.brand{display:flex;align-items:center;gap:8px;font-size:23px;letter-spacing:1px;text-decoration:none;color:#1c2942;white-space:nowrap}.brand b{font-weight:800}.mark{display:inline-flex;align-items:center;justify-content:center;position:relative;margin-right:8px;border-radius:10px;background:#254ddd;color:white;width:38px;height:38px;font-weight:800;font-size:25px}.mark span{font-size:14px;transform:translateY(5px);margin-left:-3px}.header-label{font-size:14px;color:#778198}.practice-tag{margin-left:auto;font-size:12px;border:1px solid #dde3ed;border-radius:5px;padding:5px 9px;color:#738098;white-space:nowrap}main{max-width:1180px;margin:0 auto;padding:48px 0 60px;min-height:calc(100vh - 160px)}.eyebrow{font-size:12px;letter-spacing:2px;font-weight:700;color:#3256cc;margin:0 0 12px}.page-title{font-size:32px;letter-spacing:.02em;margin:0 0 10px;font-weight:800}.intro{color:#778198;margin:0 0 32px;line-height:1.8}.layout{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:26px}.panel{background:white;border:1px solid #e0e5ef;border-radius:14px;overflow:hidden;box-shadow:0 3px 8px #1c294203}.panel-body{padding:30px}.panel-heading{font-size:20px;margin:0 0 22px;display:flex;gap:12px;align-items:center}.small-step{display:inline-grid;place-items:center;background:#edf2ff;color:#3458cd;font-size:12px;width:27px;height:27px;border-radius:7px}.modes{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:25px}.mode{position:relative;text-align:left;padding:23px 20px;border:1px solid #dce2ec;border-radius:10px;background:white;color:inherit}.mode.active{border:2px solid #3158dc;padding:22px 19px;background:#f5f8ff}.mode .radio{position:absolute;right:15px;top:17px;border-radius:50%;width:17px;height:17px;border:1px solid #c7cfde}.mode.active .radio{border:5px solid #3158dc}.mode small{font-size:12px;color:#617393}.mode strong{display:block;font-size:19px;margin:9px 0 18px}.mode .minutes{font-size:32px;font-weight:700;line-height:1}.mode .minutes small{font-size:14px;margin-left:4px;font-weight:400;color:#26334e}.mode .count{font-size:13px;color:#7b8598;margin-left:12px}.rules-strip{display:flex;justify-content:space-between;padding:18px 0;border-top:1px solid #edf0f5;border-bottom:1px solid #edf0f5;color:#657087;font-size:14px}.rules-strip span::before{content:'✓';color:#3158dc;margin-right:7px;font-weight:bold}.start{margin-top:25px;width:100%;border:0;border-radius:8px;padding:17px;background:#2e52d7;color:white;font-weight:700;font-size:16px;display:flex;justify-content:center;gap:22px;box-shadow:0 4px 9px #2e52d722}.start:hover{background:#2344bf}.hint{text-align:center;font-size:12px;color:#818b9c;margin:12px 0 0}.side{background:#172742;color:white}.side h2{font-size:18px;margin:0 0 22px}.structure{display:flex;align-items:center;gap:14px;margin:20px 0}.structure .icon{background:#ffffff12;width:42px;height:42px;border-radius:9px;display:grid;place-items:center;font-size:20px;color:#b6c9ff}.structure strong{font-size:15px}.structure p{font-size:12px;color:#aebbd0;margin:5px 0 0}.side-note{font-size:13px;line-height:1.9;color:#aebbd0;padding-top:20px;border-top:1px solid #ffffff20;margin-top:24px}.side-note b{color:#dee7f8;font-weight:500}.details{margin-top:26px}.details summary{cursor:pointer;font-size:14px;font-weight:600;padding:18px 24px}.details .content{padding:0 24px 24px;font-size:14px;color:#647188;line-height:1.9}.details a{color:#2c50c5}.bottom-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:30px;margin-top:32px}.bottom-grid h3{font-size:14px;margin:0 0 9px;display:flex;gap:10px}.bottom-grid h3 span{color:#3d62d5}.bottom-grid p{font-size:13px;color:#7a8597;line-height:1.9;margin:0}footer{max-width:1180px;margin:auto;border-top:1px solid #e0e5ee;padding:24px 0;display:flex;justify-content:space-between;color:#8b94a4;font-size:12px}footer span:first-child{font-weight:700;letter-spacing:1px}.exam-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}.exam-top h1{font-size:23px;margin:6px 0 0}.muted{color:#7c879a;font-size:14px}.button-quiet{background:white;color:#67748b;border:1px solid #dce2ec;padding:9px 16px;border-radius:7px;font-size:14px}.question-head{padding:20px 30px;background:#fbfcff;border-bottom:1px solid #e5eaf2;display:flex;align-items:center;gap:12px;font-size:14px}.badge{background:#ebf0ff;color:#3255ca;font-size:12px;padding:4px 9px;border-radius:5px}.q-number{margin-left:auto;color:#7d899c;font-size:13px}.question-text{font-size:19px;line-height:1.95;font-weight:500;white-space:pre-line;margin:0 0 28px}.options{display:grid;gap:12px}.option{display:flex;align-items:center;gap:15px;text-align:left;line-height:1.6;background:white;border:1px solid #dce3ef;border-radius:9px;padding:14px 17px;color:#26324a}.option:hover{background:#f7f9ff;border-color:#849ce9}.option.selected{background:#f0f4ff;border:2px solid #3158dc;padding:13px 16px;color:#2448c2}.letter{display:grid;place-items:center;flex:none;width:29px;height:29px;background:#f1f4f9;border-radius:6px;color:#7e8aa0;font-size:13px}.selected .letter{background:#3158dc;color:white}.time-panel{padding:26px}.time-label{font-size:13px;color:#76839b}.timer{font-size:48px;letter-spacing:1px;font-weight:600;font-variant-numeric:tabular-nums;margin:9px 0 16px}.timer.urgent{color:#d94d3c}.track{height:7px;border-radius:5px;background:#e9edf5;overflow:hidden}.fill{height:100%;background:#3158dc;transition:width .3s}.total-clock{display:flex;justify-content:space-between;font-size:14px;margin:24px 0;border-top:1px solid #e8edf5;padding-top:21px}.total-clock b{font-variant-numeric:tabular-nums}.progress-dots{display:grid;grid-template-columns:repeat(10,1fr);gap:5px;margin-top:14px}.dot{aspect-ratio:1;border-radius:3px;background:#e8edf5}.dot.done{background:#bac8f5}.dot.current{background:#3158dc}.exam-note{font-size:13px;color:#7b879b;line-height:1.9;margin-top:23px}.notice{background:#fff8e9;border:1px solid #f4dfb4;padding:12px 16px;font-size:14px;color:#846228;border-radius:8px;margin-bottom:18px}.score-layout{display:grid;grid-template-columns:230px 1fr;gap:32px;align-items:center}.score-ring{width:190px;height:190px;border-radius:50%;background:conic-gradient(#3158dc var(--pct),#eaf0fc 0);display:grid;place-items:center}.score-ring>div{width:163px;height:163px;border-radius:50%;background:white;display:flex;flex-direction:column;align-items:center;justify-content:center}.score-ring b{font-size:49px}.score-ring b small{font-size:20px}.score-ring span{font-size:13px;color:#7d889c}.metrics{display:flex;gap:45px;margin:22px 0}.metrics b{display:block;font-size:25px;margin-top:8px}.review{margin-top:20px}.review summary{display:flex;align-items:center;gap:12px;list-style:none}.review summary::after{content:'＋';margin-left:auto}.review[open] summary::after{content:'−'}.status{font-size:12px;padding:3px 7px;border-radius:4px;white-space:nowrap}.correct{color:#18856d;background:#e6f5f0}.wrong{color:#bd5149;background:#fff0ee}.answer-line{background:#f4f7ff;padding:13px 17px;border-radius:7px;margin:14px 0;color:#2748a2}.review-title{font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.result-actions{display:flex;gap:12px;margin-top:24px}.result-actions .start{width:auto;margin:0;padding:13px 28px}.filter{display:flex;align-items:center;justify-content:space-between;margin-top:36px}.filter h2{font-size:21px;margin:0}.filter label{font-size:14px;color:#6f7d93}dialog{border:0;border-radius:14px;padding:30px;max-width:440px;width:calc(100% - 36px);box-shadow:0 20px 90px #17274233}dialog::backdrop{background:#15223d66}dialog p{color:#6a7890;line-height:1.9}dialog .actions{display:flex;gap:10px;justify-content:flex-end}dialog button{border:0;padding:12px 16px;border-radius:7px}.primary{background:#3158dc;color:white}
+@media(max-width:1240px){main{padding:36px 28px 50px}footer{margin:0 28px}}@media(max-width:800px){header{height:74px;padding:0 20px}.header-label{display:none}.layout{grid-template-columns:1fr}.page-title{font-size:27px}.side{display:none}.exam-layout{display:flex;flex-direction:column-reverse}.time-panel{padding:16px 20px;display:grid;grid-template-columns:1fr 1fr;gap:6px 20px}.timer{font-size:30px;margin:0}.time-panel .track{grid-column:1}.total-clock{margin:0;border:0;padding:0;grid-column:2;grid-row:1/3;align-items:center;justify-content:flex-end;gap:14px}.time-panel .progress-label,.progress-dots,.exam-note{display:none}.bottom-grid{gap:18px}.score-layout{grid-template-columns:1fr}.score-ring{margin:auto}}@media(max-width:480px){main{padding:28px 16px 40px}.brand{font-size:19px}.practice-tag{font-size:10px}.panel-body{padding:22px}.modes{gap:10px}.mode{padding:19px 12px}.mode.active{padding:18px 11px}.mode strong{font-size:16px}.mode .count{display:block;margin:12px 0 0}.rules-strip{font-size:12px;gap:8px;flex-wrap:wrap}.bottom-grid{grid-template-columns:1fr}.bottom-grid p{margin-left:25px}.question-text{font-size:17px}.question-head{padding:16px 22px}.metrics{gap:25px}.score-layout{gap:20px}.header-label{display:none}header{gap:10px}.intro{font-size:14px}.exam-top h1{font-size:19px}.result-actions{flex-wrap:wrap}.filter label{font-size:12px}footer{margin:0 16px}}
+
+.practice-progress{padding:22px 28px;margin-bottom:24px;display:flex;align-items:center;flex-wrap:wrap;gap:12px 30px}.practice-progress h2{font-size:21px;margin:6px 0}.practice-progress p{font-size:14px;color:#657087;line-height:1.8;margin:0}.practice-progress .eyebrow{font-size:11px}.unseen{margin-left:auto;display:flex;flex-direction:column;align-items:center;min-width:100px}.unseen strong{font-size:36px;color:#3158dc}.unseen span{font-size:12px;color:#738098}.practice-progress .storage-note{width:100%;border-top:1px solid #edf0f5;padding-top:12px;font-size:12px}.details li{margin-bottom:16px}@media(max-width:480px){.practice-progress{padding:20px;gap:12px}.practice-progress h2{font-size:19px}.unseen{margin-left:0;align-items:flex-start}.practice-progress p{font-size:13px}}
+
+.modes{grid-template-columns:repeat(3,minmax(0,1fr))}.difficulty-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:12px}.difficulty-option{padding:13px 8px;background:white;border:1px solid #dce2ec;border-radius:8px;color:#26324a}.difficulty-option.active{border:2px solid #3158dc;padding:12px 7px;background:#f0f4ff;color:#2548bd}.difficulty-option strong,.difficulty-option small{display:block}.difficulty-option small{font-size:12px;margin-top:5px}.rules-strip{margin-top:22px}.practice-progress{margin-top:24px}.mode .count{display:block;margin:12px 0 0}@media(max-width:480px){.modes{grid-template-columns:1fr}.mode .count{display:inline;margin-left:15px}.mode strong{margin:7px 0 12px}.difficulty-option small{font-size:11px}}
+
+.format-options{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:26px}.adaptive-note{background:#f0f4ff;padding:16px 18px;border-radius:9px}.adaptive-note b{color:#3158dc}.adaptive-note p{font-size:13px;line-height:1.8;color:#647188;margin-bottom:0}.numeric-label{display:block;margin-bottom:12px}.numeric-row{display:flex;align-items:center;gap:12px}.numeric-row input{min-width:0;width:100%;padding:15px;border:1px solid #a8b8d8;border-radius:8px;font-size:22px}.format-summary{color:#66748c;font-size:14px;line-height:1.8}.metrics{flex-wrap:wrap;gap:24px}.format-table{border-collapse:collapse;width:100%;font-size:13px}.format-table td,.format-table th{padding:10px;border:1px solid #dce3ef;text-align:left}@media(max-width:480px){.format-options{grid-template-columns:1fr}}
+</style></head><body><header><a class="brand" href="#"><span class="mark">S<span>F</span></span>SPI <b>FOCUS</b></a><span class="header-label">能力検査トレーニング</span><span class="practice-tag">非公式・オリジナル問題</span></header><main id="app"></main><footer><span>SPI FOCUS</span><span>速さと正確さを、一問ずつ。</span></footer><script>const BANK=[];
+function add(section,type,level,seconds,text,options,answer,explanation){BANK.push({id:BANK.length,section,type,level,seconds,text,options,answer,explanation});}
+const V=(t,l,s,q,o,a,e)=>add('言語',t,l,s,q,o,a,e);
+const N=(t,l,s,q,o,a,e)=>add('非言語',t,l,s,q,o,a,e);
+V('二語の関係',1,30,'「医師：診察」と同じ関係になる組を選びなさい。',['画家：絵画','教師：授業','病院：患者','料理：食材','学校：教室'],1,'職業と、その職業の人が行う仕事の関係。医師は診察を行い、教師は授業を行う。');
+V('二語の関係',1,30,'「樹木：森林」と同じ関係になる組を選びなさい。',['水：氷','魚：海','星：星座','紙：文字','山：谷'],2,'個々のものと、その集まりの関係。樹木の集まりが森林、星の集まりが星座。');
+V('二語の関係',2,35,'「鋳型：金属」と同じ関係になる組を選びなさい。',['筆：絵画','設計：建物','包丁：料理','製氷皿：水','窓：ガラス'],3,'容器・型と、その中に入れて成形する材料の関係。');
+V('二語の関係',2,35,'「辞書：語義」と同じ関係になる組を選びなさい。',['地図：位置','道路：車','時計：歯車','小説：作家','新聞：紙'],0,'情報を調べる道具と、そこで調べられる情報の関係。辞書で語義、地図で位置を調べる。');
+V('語句の意味',1,30,'「物事の道理に明るく、判断が適切である」に最も近い語を選びなさい。',['実直','温厚','聡明','寛容','謙虚'],2,'聡明は理解力・判断力にすぐれていること。実直は誠実で正直なこと。');
+V('語句の意味',2,30,'「その場しのぎの対応」を意味する語を選びなさい。',['周到','場当たり','漸進','率先','適宜'],1,'場当たりは、先を見通す計画を持たず、その場の状況だけで対応すること。');
+V('語句の意味',3,35,'「両者の説明には齟齬がある」の「齟齬」に最も近い意味を選びなさい。',['補足','重複','隔たりのない一致','食い違い','強い確信'],3,'齟齬（そご）は、物事がかみ合わず食い違うこと。');
+V('語句の意味',3,35,'「議論が膠着する」の「膠着」に最も近い意味を選びなさい。',['決着して終わる','進展しなくなる','急速に広がる','具体性を増す','最初に戻る'],1,'膠着（こうちゃく）は、状態が固定し、動きや進展がなくなること。');
+V('熟語の成り立ち',1,30,'「増減」の成り立ちとして最も適切なものを選びなさい。',['似た意味の漢字を重ねる','反対の意味の漢字を重ねる','前の漢字が後の漢字を修飾する','後の漢字が前の漢字の目的語になる','主語と述語の関係'],1,'増える・減るという反対の意味の漢字を組み合わせている。');
+V('熟語の成り立ち',2,35,'「読書」の成り立ちとして最も適切なものを選びなさい。',['同義','対義','修飾・被修飾','動作・目的語','主語・述語'],3,'書を読むという関係。「読む」という動作の目的語が「書」。');
+V('熟語の成り立ち',2,35,'「国営」の成り立ちとして最も適切なものを選びなさい。',['同義','対義','修飾・被修飾','動作・目的語','主語・述語'],4,'国が営むという主語・述語の関係。');
+V('熟語の成り立ち',1,30,'「急流」の成り立ちとして最も適切なものを選びなさい。',['同義','対義','前の字が後の字を修飾','動作・目的語','主語・述語'],2,'急な流れというように、「急」が「流」を修飾している。');
+V('空欄補充',2,45,'新しい制度を導入する際には、効率性だけでなく、公平性との（　）を図ることが重要である。',['迎合','均衡','断絶','譲歩','反証'],1,'「均衡を図る」は、複数の要素のバランスを保つこと。');
+V('空欄補充',2,45,'この調査から二つの事象の関連は読み取れる。しかし、それだけで因果関係を（　）することはできない。',['示唆','想起','断定','考慮','推測'],2,'関連があるという観察だけでは、原因と結果だと確定できない。「断定」が適切。');
+V('空欄補充',3,50,'仮説に合う事例だけを集めても、検証としては不十分である。むしろ、その仮説を（　）しうる事例を探す姿勢が求められる。',['追認','補強','反証','踏襲','代弁'],2,'仮説が誤りだと示す可能性がある事例を探し、成立するかを確かめる。「反証」が適切。');
+V('文の並べ替え',2,55,'次の文を自然な順に並べなさい。\nア しかし、そのままでは利用者に伝わらない。\nイ 調査によって多くの情報が得られた。\nウ そこで、目的別に情報を整理した。\nエ その結果、必要な情報を探しやすくなった。',['イ→ア→ウ→エ','イ→ウ→ア→エ','ア→イ→エ→ウ','ウ→イ→ア→エ','イ→エ→ア→ウ'],0,'情報を得る→そのままでは伝わらないという課題→整理という対策→効果、の順。');
+V('文の並べ替え',3,60,'次の文を自然な順に並べなさい。\nア このような小さな修正の積み重ねが、製品の質を高める。\nイ 試作品を実際の利用者に使ってもらった。\nウ その指摘を受け、ボタンの位置を変更した。\nエ すると、操作しづらいという意見が寄せられた。',['イ→ウ→エ→ア','イ→エ→ウ→ア','エ→イ→ア→ウ','ウ→イ→エ→ア','ア→ウ→イ→エ'],1,'試用→意見→その指摘に基づく修正→修正の意義というまとめ。');
+V('長文読解',2,75,'文章を読み、内容と一致するものを選びなさい。\n\n都市の緑地には、気温の上昇を抑える働きがある。ただし、その効果は緑地の面積だけでは決まらない。樹木の種類や配置、風の通り道などにも左右される。そのため、緑地を増やす政策では、面積を確保するだけでなく、地域の環境に応じた設計が必要になる。',['緑地の効果は面積だけで決まる','樹木の種類は気温に影響しない','地域の環境に応じた緑地設計が必要だ','緑地の面積を増やしても効果はない','風が強ければ緑地は不要だ'],2,'本文は面積以外に樹種・配置・風も影響すると述べ、地域に応じた設計を求めている。');
+V('長文読解',3,85,'文章を読み、筆者の主張として最も適切なものを選びなさい。\n\n情報を短くまとめることは、単に文字数を減らすことではない。すべての部分を同じ割合で削れば、文章は短くなるが、主張の根拠まで失われるおそれがある。要約には、情報の役割を見極め、結論を支える関係を保ったまま、枝葉を取り除く判断が必要である。',['要約では結論だけを残すべきだ','要約は情報の構造を保つ選択的な作業だ','文章の各部分を均等に削るべきだ','短い文章には根拠が不要だ','原文より長い要約が望ましい'],1,'結論と根拠の関係を保ちながら不要な情報を取り除くことを重視している。');
+V('長文読解',3,85,'文章を読み、本文から言えるものを選びなさい。\n\nある図書館では、開館時間を延長した後、夜間の利用者が増えた。一方で、一日全体の利用者数には大きな変化がなかった。担当者は、従来昼間に来ていた人の一部が夜間に移った可能性を指摘する。ただし、個々の利用者の来館時刻を追跡していないため、その説明はまだ確認されていない。',['延長によって新規利用者が確実に増えた','昼間の利用者は全員夜間に移った','利用時刻の移動は可能性として示されている','延長にはいかなる利点もない','担当者の説明はデータで証明済みだ'],2,'来館時刻の移動は仮説であり、個人の追跡データによる確認はされていない。');
+V('二語の関係',3,40,'「種子：発芽」と同じ関係になる組を選びなさい。',['花：花瓶','卵：孵化','鳥：巣','果実：収穫','根：土壌'],1,'生命のもとになるものと、そこから成長が始まる過程の関係。種子は発芽し、卵は孵化する。');
+V('空欄補充',1,35,'資料の数値に誤りがないか、提出前にもう一度（　）する。',['照合','妥協','中断','譲渡','放任'],0,'照合は照らし合わせて確かめること。数値を確認する文脈に適する。');
+V('長文読解',2,70,'文章を読み、内容と一致するものを選びなさい。\n\n道具に慣れると、作業に必要な注意は少なくなる。しかし、慣れはいつも望ましいわけではない。状況が変わっても以前と同じ手順を無意識に続け、変化を見落とすことがある。経験を生かすには、手順を習熟させるだけでなく、前提が変わっていないかを確認する必要がある。',['慣れれば注意は完全に不要になる','経験は必ず変化の発見を妨げる','手順の習熟と前提の確認が必要だ','毎回すべての手順を変えるべきだ','初心者は変化を見落とさない'],2,'筆者は習熟の利点を認めたうえで、前提の変化に注意する必要を述べている。');
+V('語句の意味',2,30,'「計画を踏襲する」の「踏襲」に最も近い意味を選びなさい。',['前例や方針を受け継ぐ','問題点を指摘する','一部を削除する','秘密にして進める','全く新しく作る'],0,'踏襲（とうしゅう）は、従来のやり方や方針を受け継いで、そのとおりに行うこと。');
+N('損益算',1,50,'原価800円の商品に、原価の25％の利益を見込んで定価をつけた。定価はいくらか。',['900円','960円','1,000円','1,040円','1,200円'],2,'800×1.25＝1,000円。利益率の基準は原価。');
+N('損益算',2,65,'原価1,200円の商品を定価の20％引きで売ったところ、240円の利益が出た。定価はいくらか。',['1,500円','1,680円','1,728円','1,800円','2,000円'],3,'売価は1,200＋240＝1,440円。定価×0.8＝1,440より、定価は1,800円。');
+N('割合',1,45,'ある部署の社員は80人で、その35％が女性である。男性は何人か。',['28人','45人','48人','52人','56人'],3,'女性は80×0.35＝28人。男性は80−28＝52人。');
+N('割合',2,60,'商品の価格を20％値上げした後、値上げ後の価格から10％値下げした。最初の価格に比べて何％高いか。',['2％','8％','10％','12％','18％'],1,'最初を100とすると、100×1.2×0.9＝108。8％高い。');
+N('速さ',1,50,'時速4.8kmで歩く人が、1.2km進むのに何分かかるか。',['12分','15分','18分','20分','25分'],1,'時間＝距離÷速さ。1.2÷4.8＝0.25時間＝15分。');
+N('速さ',2,65,'Aは分速60mで出発した。5分後にBが同じ地点から分速90mで同じ道を追いかけた。Bは出発から何分後に追いつくか。',['5分','8分','10分','12分','15分'],2,'Aの先行距離は60×5＝300m。毎分90−60＝30m縮まるので300÷30＝10分。');
+N('仕事算',2,70,'ある仕事をAだけですると12日、Bだけですると18日かかる。2人で3日間働いた後、残りをAだけで行う。Aだけで働く日数は何日か。',['5日','6日','7日','8日','9日'],2,'2人の1日の仕事は1/12＋1/18＝5/36。3日で5/12終わり、残り7/12をAが行うので7日。');
+N('仕事算',3,80,'水槽にA管だけで注水すると6時間、B管だけで排水すると9時間で空になる。空の水槽にA管で2時間注水し、その後両方を開いた。満水までさらに何時間か。',['6時間','8時間','10時間','12時間','18時間'],3,'2時間で1/3が入り、残り2/3。両方を開くと毎時1/6−1/9＝1/18増える。2/3÷(1/18)＝12時間。');
+N('場合の数',1,50,'5人の中から委員を2人選ぶ。選び方は何通りか。',['5通り','10通り','15通り','20通り','25通り'],1,'順序を区別しないので5×4÷2＝10通り。');
+N('場合の数',2,65,'男女各3人から3人を選ぶ。男性がちょうど2人となる選び方は何通りか。',['6通り','9通り','12通り','18通り','20通り'],1,'男性3人から2人を選ぶ3通り×女性3人から1人を選ぶ3通り＝9通り。');
+N('場合の数',3,85,'A、B、C、D、Eの5人が横一列に並ぶ。AとBが隣り合わない並び方は何通りか。',['24通り','48通り','60通り','72通り','96通り'],3,'全体は5!＝120通り。AとBを一組にすると隣り合う場合は4!×2＝48通り。120−48＝72通り。');
+N('確率',2,65,'袋に赤玉3個、白玉2個がある。同時に2個取り出すとき、両方が赤玉である確率は。',['1/5','3/10','2/5','1/2','3/5'],1,'全組合せは5C2＝10、赤2個は3C2＝3。確率は3/10。');
+N('確率',3,85,'公平なサイコロを2回振る。出た目の積が6の倍数になる確率は。',['1/3','5/12','1/2','7/12','2/3'],1,'少なくとも一方が6：11通り。6がない場合、3と2または4の組が4通り。計15/36＝5/12。');
+N('集合',1,55,'50人に調査した。コーヒーが好きな人は30人、紅茶が好きな人は25人、両方好きな人は15人だった。どちらも好きでない人は何人か。',['5人','10人','15人','20人','25人'],1,'少なくとも一方が好き＝30＋25−15＝40人。どちらも好きでない人は50−40＝10人。');
+N('集合',3,80,'60人のうち、英語を学ぶ人は35人、中国語は28人、韓国語は20人。ちょうど2言語を学ぶ人は15人、3言語すべては5人だった。どれも学ばない人は何人か。',['0人','2人','5人','7人','10人'],1,'延べ人数83。ちょうど2言語の重複15人分と3言語の重複10人分を引くと実人数58。60−58＝2人。');
+N('推論・順序',2,65,'P、Q、R、Sが1回ずつ発表する。PはQより前、RはQより後、SはPより前に発表した。2番目の発表者は誰か。',['P','Q','R','S','特定できない'],0,'条件をつなぐとS＜P＜Q＜Rとなるので2番目はP。');
+N('表の読み取り',1,55,'ある店の売上個数は次のとおり。\n商品A：4月120個、5月150個\n商品B：4月80個、5月100個\n商品C：4月100個、5月90個\n5月の合計売上個数はいくつか。',['300個','320個','330個','340個','350個'],3,'150＋100＋90＝340個。');
+N('表の読み取り',2,70,'3支店の売上高と利益率は次のとおり。\nP：売上高500万円、利益率12％\nQ：売上高400万円、利益率15％\nR：売上高600万円、利益率10％\n3支店合計の売上高に対する利益率は。',['10％','11％','12％','12.3％','15％'],2,'利益は各60万円、合計180万円。売上高合計1,500万円なので180÷1,500＝12％。');
+N('濃度',2,65,'8％の食塩水200gに水を加え、5％の食塩水にする。加える水は何gか。',['80g','100g','120g','160g','200g'],2,'食塩は200×0.08＝16g。全体は16÷0.05＝320gになるので、加える水は120g。');
+N('濃度',3,80,'4％の食塩水と10％の食塩水を混ぜて、7％の食塩水300gを作る。10％の食塩水は何g必要か。',['90g','100g','120g','150g','180g'],3,'10％をx gとすると0.1x＋0.04(300−x)＝21。0.06x＝9、x＝150。');
+N('代金の精算',2,65,'A、B、Cが旅行費を均等に負担する。Aは12,000円、Bは7,500円、Cは4,500円を立て替えた。精算として正しいものは。',['BがAに500円、CがAに3,500円払う','AがBに500円、AがCに3,500円払う','CがAに4,000円払う','BがAに1,000円、CがAに3,000円払う','CがBに3,000円払う'],0,'合計24,000円なので1人8,000円。Aは4,000円多く、Bは500円、Cは3,500円足りない。');
+N('推論・十分条件',3,85,'PとQの所持金の合計は3,000円である。Pの所持金を特定するため、次の情報を考える。\nア：PはQより600円多い。\nイ：Pの所持金はQの1.5倍である。',['アだけで分かるがイだけでは分からない','イだけで分かるがアだけでは分からない','両方そろって初めて分かる','アだけでもイだけでも分かる','両方あっても分からない'],3,'アならP＋Q＝3,000、P−Q＝600よりP＝1,800。イならP＝1.5QよりP＝1,800。どちらか一つで十分。');
+N('数列',1,45,'次の数列の（　）に入る数を選びなさい。\n3、7、11、15、（　）、23',['17','18','19','20','21'],2,'4ずつ増える等差数列。15＋4＝19。');
+N('推論・条件',3,80,'P、Q、R、Sの4人が1〜4位になり、同順位はいない。\n・PはQより上位\n・RはSのすぐ上位\n必ず正しいものはどれか。',['Pは1位','Qは4位','Rは1位','SはPより下位','Rは4位ではない'],4,'Rのすぐ下位にSがいるため、Rは4位にはなれない。他の選択肢はPQRSとRSPQなどを比べると必ず成立するとはいえない。');
+
+</script><script>// Original practice content. Source references describe scope, not these questions.
+// IDs are stable and independent of the order of the existing bank.
+const vocabulary=[
+['示唆','直接言わずに、それとなく知らせること',2],
+['網羅','関係するものを漏れなく取り上げること',2],
+['懸念','先のことを心配すること',1],
+['妥当','事情によく合っていて適切なこと',1],
+['概括','全体を大まかにまとめること',2],
+['看過','見逃して問題にしないこと',2],
+['漸進','少しずつ段階を追って進むこと',2],
+['画一','違いを認めず、すべてを同じようにすること',2],
+['拙速','出来は十分でないが、仕事が速いこと',2],
+['周到','準備や注意が隅々まで行き届いていること',1],
+['推敲','文章の表現を何度も練り直すこと',2],
+['割愛','惜しいと思いながら省略すること',2],
+['遵守','規則や決まりを守ること',1],
+['折衷','異なる考えのよいところを取り入れてまとめること',2],
+['脆弱','もろくて弱いこと',2],
+['冗長','必要以上に長く、無駄が多いこと',2],
+['簡潔','短くまとまっていて、要点が明確なこと',1],
+['精緻','細部まで精密にできていること',3],
+['恣意','その場の思いつきや勝手な判断',3],
+['普遍','例外なく広く当てはまること',2],
+['固有','そのものだけが持っていること',1],
+['潜在','表面には現れず、内に隠れて存在すること',2],
+['顕在','はっきりと表面に現れて存在すること',2],
+['介在','物事の間に別のものが入って存在すること',2],
+['媒介','間に立って両者の関係を取り持つこと',2],
+['是正','よくない点を正しく直すこと',1],
+['刷新','古いものを改めて新しくすること',1],
+['淘汰','適さないものが除かれ、選び残されること',2],
+['収斂','ばらばらのものが一つにまとまっていくこと',3],
+['乖離','本来近いはずのものが離れていること',3],
+['逡巡','決めかねてためらうこと',3],
+['忖度','他人の気持ちを推し量ること',3],
+['斟酌','事情や気持ちをくみ取って考慮すること',3],
+['敷衍','意味を押し広げ、詳しく説明すること',3],
+['援用','自分の主張の助けとして他の説や事例を引用すること',3],
+['帰納','個々の事例から一般的な法則を導くこと',3],
+['演繹','一般的な法則から個別の結論を導くこと',3],
+['傍証','間接的に事実を裏付ける証拠',3],
+['反駁','相手の主張に反対の根拠を挙げて論じ返すこと',3],
+['妥協','対立する双方が条件を譲り合って一致点を見いだすこと',1],
+['迎合','自分の考えを曲げて相手に気に入られようとすること',2],
+['追随','先に行くものに従って後からついていくこと',2],
+['率先','人より先に立って行うこと',1],
+['先見','将来の成り行きを前もって見通すこと',2],
+['臨機応変','その時の状況に合わせて適切に対応すること',1],
+['本末転倒','大切なことと枝葉のことを取り違えること',1],
+['一長一短','よい面もあれば悪い面もあること',1],
+['試行錯誤','試みと失敗を繰り返しながら方法を見つけること',1],
+['温故知新','以前の事柄を学び直して新しい知識や見方を得ること',2],
+['換骨奪胎','既存の形式や発想を生かしながら独自の作品に作り変えること',3],
+['漠然','はっきりせず、ぼんやりしていること',1],
+['端的','要点を明瞭に表すさま',2],
+['悠長','気長で落ち着いていて、急がないさま',2],
+['適宜','状況に応じて、適切に判断して行うさま',1],
+['随時','必要に応じて、いつでも行うさま',1],
+['一律','違いにかかわらず、同じ基準で扱うさま',1],
+['逐次','順を追って次々に行うさま',2],
+['暫定','正式に決めるまで仮に定めること',2],
+['恒常','いつも一定の状態を保っていること',2],
+['逸脱','本来の範囲や道筋からそれること',2]
+];
+vocabulary.forEach(([word,meaning,level],i)=>{
+ const distractors=[7,17,29,41].map(offset=>vocabulary[(i+offset)%vocabulary.length][1]);
+ V('語句の意味',level,level===3?35:30,`「${word}」の意味として最も適切なものを選びなさい。`,[meaning,...distractors],0,`「${word}」は、${meaning}。言葉の印象だけでなく、説明の中心となる意味を照合する。`);
+ Object.assign(BANK.at(-1),{id:`vocab-${word}`,family:`vocab-${word}`,origin:'authored'});
+});
+const analogies=[
+['船：船長','飛行機：機長',['客：店員','本：読者','畑：野菜','道：歩行者'],'乗り物と、その運航の責任者の関係。',1],
+['小麦：パン','ぶどう：ワイン',['木：森','皿：料理','針：糸','時計：時刻'],'材料と、それを加工して作る製品の関係。',1],
+['自動車：車輪','時計：歯車',['電車：乗客','靴：地面','紙：鉛筆','川：海'],'全体と、それを構成する部品の関係。',1],
+['高温：低温','拡大：縮小',['増加：上昇','開始：出発','努力：成功','南方：地域'],'反対の意味を持つ語の関係。',1],
+['軽率：慎重','傲慢：謙虚',['誠実：実直','寛容：温厚','簡単：容易','静寂：平穏'],'態度や性質について意味が対立する関係。',2],
+['懸念：心配','承諾：同意',['出発：到着','原因：結果','対立：一致','手段：目的'],'近い意味を持つ語の関係。',1],
+['はさみ：切断','定規：測定',['机：木材','教室：学校','皿：陶器','帽子：衣服'],'道具と、その主要な用途の関係。',1],
+['温度計：温度','速度計：速度',['切符：電車','牛乳：乳製品','果樹：果実','塗料：壁'],'計器と、それによって測る量の関係。',1],
+['詩人：詩','作曲家：楽曲',['俳優：劇場','記者：取材','医師：病院','教師：指導'],'作り手と、その創作物の関係。',2],
+['春：夏','夕方：夜',['東：西','月：太陽','海：山','朝：朝日'],'時間の移り変わりの中で、後者が前者に続く関係。',1],
+['購入：売却','貸与：借用',['授業：学習','記録：保存','構想：実行','合意：契約'],'同じ取引・やり取りを対向する立場から表す関係。',2],
+['チューリップ：花','すずめ：鳥',['海：水','木：枝','氷：低温','牧場：牛'],'ある種類に属する具体例と、その上位分類の関係。',1],
+['発明：特許','創作：著作権',['病気：治療','事故：保険金','建物：設計','裁判：証言'],'生み出された知的成果と、それを保護する権利の関係。',3],
+['乾燥：湿潤','緊張：弛緩',['整理：整頓','推測：予想','記録：文書','理解：納得'],'状態について意味が対立する関係。弛緩はゆるむこと。',2],
+['索引：検索','目次：内容把握',['著者：読書','表紙：印刷','書店：出版','紙面：文字'],'書物の補助的な仕組みと、それが助ける行為の関係。',2],
+['裁判官：判決','審判：判定',['選手：観客','農家：田畑','小説家：読書','客：注文'],'判断を担当する役割と、その役割が下す判断の関係。',2],
+['蕾：開花','蛹：羽化',['種：収穫','鳥：飛行','花：受粉','魚：遊泳'],'成長過程の直前の状態と、次の形態へ移る変化の関係。',2],
+['声楽：音楽','彫刻：美術',['筆：画材','小説：原稿','演劇：舞台','楽譜：演奏'],'芸術の一分野と、それを含む大きな領域の関係。',2],
+['原因：結果','前提：結論',['判断：根拠','効果：要因','完成：準備','到着：出発'],'後者が前者をもとに導かれる順の関係。逆向きの組に注意する。',3],
+['校正：誤植','点検：不具合',['宣伝：商品','洗濯：衣服','会議：議題','撮影：風景'],'確認作業と、その作業で発見・修正しようとする問題の関係。',2]
+];
+analogies.forEach(([pair,answer,others,why,level],i)=>{V('二語の関係',level,35,`「${pair}」と最も近い関係になる組を選びなさい。`,[answer,...others],0,why);Object.assign(BANK.at(-1),{id:`analogy-extra-${i}`,origin:'authored'});});
+const readings=[
+['情報共有','会議の議事録を全員に配布しても、情報が共有されたとは限らない。専門用語の意味や判断の背景が分からなければ、読む側は自分の仕事と結び付けられないからだ。共有の成否は、配布した量だけではなく、相手が判断や行動に使える形になっているかによって確かめる必要がある。','情報を相手が使える形にすることが重要である',['配布する文書の量が多いほど共有は成功する','専門用語を含む文書はすべて廃止すべきだ','議事録を配布することには意味がない','判断の背景は読む側が必ず知っている'],'配布という行為と、活用できる状態とを区別している。'],
+['平均値','二つの店舗の一日の平均待ち時間はともに10分だった。しかし、一方はほぼ毎日10分で、他方は日によって2分から30分まで変動していた。平均値だけを見れば同じでも、予定を立てやすいかどうかは異なる。状況を理解するには、代表値とともにばらつきにも目を向けたい。','平均が同じでも、ばらつきによって利用時の状況は異なる',['平均値はどのような場面でも使えない','最大値だけで店舗を評価すべきだ','待ち時間が変動する店は平均も必ず長い','二つの店舗の最大待ち時間は等しい'],'平均10分という一致だけでは、日ごとの変動の違いは表せない。'],
+['地域資料','地域の古い写真には、撮影場所や年代が不明なものが少なくない。写真を公開すると、住民の記憶から情報が集まることがある。ただし、記憶は常に正確とは限らないため、地図や記録との照合も欠かせない。記憶と資料は、一方を他方に置き換えるのではなく、補い合う形で扱うべきだ。','住民の記憶を資料と照合しながら活用するべきだ',['住民の記憶はすべて資料より正確だ','撮影年代の不明な写真は公開できない','地図があれば住民の情報は不要だ','記憶が一致すれば照合は絶対に不要だ'],'記憶を役立つ情報源と認めながら、他の資料との照合を求めている。'],
+['自動化','定型作業の自動化は、担当者の負担を軽くする。一方で、例外的な事態への対応まで自動化できるとは限らない。導入時には通常の流れだけでなく、処理できなかった場合に誰が何を判断するかも決めておく必要がある。','通常処理に加え、例外への対応も設計する必要がある',['自動化すれば人による判断は完全に不要になる','例外がある仕事は一切自動化できない','自動化は担当者の負担を必ず増やす','通常の処理が速ければ例外は無視できる'],'自動化の利点と限界を踏まえ、例外の担当と判断方法を明確にする主張。'],
+['比較の条件','新しい広告を出した月に売上が増えた。しかし、同じ月には営業時間の延長も行われ、近隣では大きな催しがあった。この増加を広告だけの効果と考えるには、他の条件の影響を切り分ける必要がある。','売上増加には広告以外の要因も関わった可能性がある',['広告が売上に全く影響しなかったと分かる','営業時間の延長だけが増加の原因である','近隣の催しと売上には必ず因果関係がある','売上が増えれば広告の効果は証明される'],'複数の条件が同時に変わっているので、広告だけの効果とは断定できない。'],
+['対話','意見が異なる相手と話すとき、結論だけを比べると対立が深まる場合がある。何を重視し、どのような経験からその判断に至ったかをたどれば、共通の課題が見えることもある。対話は必ずしも結論の一致を保証しないが、違いの理由を理解する助けにはなる。','結論が一致しなくても、対話によって違いの背景を理解できる',['対話を続ければ必ず結論が一致する','判断の背景を尋ねると常に対立が深まる','対話では共通点だけを話すべきだ','意見の異なる相手とは話す必要がない'],'一致を保証しないと明記したうえで、背景を理解する意義を述べている。'],
+['再利用','使われなくなった建物を別の用途に転用する際、外観を残すことだけが保存ではない。その場所で営まれていた活動を記録し、新しい使い方と結び付けることも、地域の記憶を伝える方法になる。建物の価値は形だけでなく、利用の歴史にもある。','形とともに利用の歴史を伝えることにも価値がある',['外観を残すことには価値がない','建物は元と同じ用途にしか使えない','記録さえ残せば建物はすべて壊すべきだ','地域の記憶は外観から完全に分かる'],'外観保存を否定せず、活動の歴史を記録するという価値を加えている。'],
+['学習','解説を読んで納得した直後には、自分も解けると感じやすい。だが、手掛かりのない状態で手順を再現できるかは別の問題である。理解を確かめるには、少し時間を置き、解説を閉じて解き直すことが役立つ。','納得した感覚と、自力で再現できることは区別すべきだ',['解説を読む学習はすべて無意味である','直後に理解したと感じれば再確認は不要だ','時間を置くほど必ず成績が下がる','手順は覚えずに勘だけで解くべきだ'],'説明を理解することと自力で手順を再現することの違いが中心。'],
+['需要予測','過去の販売実績は需要を予測する重要な資料である。ただし、品切れが多かった商品の販売数は、買いたかった人の数より少ない可能性がある。売れた数をそのまま需要とみなすと、必要な在庫を過小に見積もるおそれがある。','品切れがあると販売数が需要を十分に表さないことがある',['販売数は常に需要を上回る','過去の実績は需要予測に使えない','品切れの商品は必ず人気がない','在庫を増やせばすべての商品が売れる'],'買いたくても買えなかった分は販売実績に現れないため、需要を過小評価しうる。'],
+['分類','分類は、複雑なものを整理して理解しやすくする。しかし、分類の境界は目的によって変わりうる。同じ道具でも、材料で分ける場合と用途で分ける場合では所属が異なる。分類を使うときは、その基準と目的を明らかにしておくことが大切だ。','分類の基準は目的に応じて定め、明示する必要がある',['どんな分類でも所属は変わらない','材料による分類だけが正しい','一つの物を複数の観点から捉えることはできない','分類を行えば目的の確認は不要になる'],'分類の有用性を認めつつ、基準が目的によって変わることを説明している。'],
+['効率','作業の各工程を個別に速くしても、全体の完成が同じだけ早まるとは限らない。後工程が処理できる量を超えて前工程が作れば、仕掛品が増えるだけの場合もある。全体を改善するには、工程間のつながりと処理量の制約を調べなければならない。','各工程だけでなく、工程間のつながりを見て改善すべきだ',['前工程が速いほど全体は必ず同じ割合で速くなる','後工程の処理量は全体に影響しない','仕掛品を増やすことが改善の目的である','工程を改善することに意味はない'],'局所的な高速化が全体の改善につながるとは限らず、制約を見る必要がある。'],
+['選択肢','選択肢が多いことは、好みに合うものを探す機会を広げる。一方、比較の基準がないまま数だけが増えると、選ぶ負担も大きくなる。情報を提供する側は、選択肢を並べるだけでなく、違いを判断できる軸を示す工夫が求められる。','選択肢に加え、比較のための基準を示すことが大切だ',['選択肢は常に一つでよい','比較基準がなくても数が多ければ必ず選びやすい','好みは商品選択に関係がない','選ぶ負担を減らすため情報をすべて隠すべきだ'],'選択肢の多さの利点と負担の両面から、比較軸の必要性を導いている。'],
+['観察','自然の観察では、目立つ変化だけでなく、変化が見られなかったことも記録に値する。同じ条件で観察を続けた記録があれば、後に起きた変化が例外的なものかどうかを判断しやすくなるからだ。','変化がない期間の記録も、後の変化を評価する基準になる',['変化がない日は観察を行ってはならない','目立つ変化だけで通常の状態を正確に把握できる','観察の条件は毎回変えるほど比較しやすい','変化が起きる時期は記録だけで必ず予言できる'],'変化のない状態の継続記録が、比較のための基準になると述べている。'],
+['専門知識','専門家は、経験から重要な情報を素早く見分けられる。その反面、初めて接する人がどこでつまずくかを想像しにくくなることがある。説明を改善するには、相手に実際に試してもらい、分からなかった箇所を確かめることが有効である。','相手がつまずく箇所を確認することが説明の改善に役立つ',['専門知識が多い人ほど必ず説明が上手だ','初心者の疑問を確認する必要はない','専門家の経験には価値がない','説明を長くすればすべての誤解がなくなる'],'専門性の利点を認めながら、初心者の理解の確認を勧めている。'],
+['評価指標','窓口の対応件数だけを評価すると、一件に時間がかかる相談が後回しになるおそれがある。件数は活動量を示すが、相談が解決したかどうかを直接には示さない。評価には、目的に照らして複数の側面を組み合わせることが必要である。','対応件数だけでは、相談の解決という成果を十分に評価できない',['件数が多ければ相談は必ずすべて解決している','時間のかかる相談には対応すべきでない','評価指標は多ければ目的と無関係でもよい','窓口の活動量は一切測定できない'],'件数という活動量と、相談解決という成果を区別し、複数の側面を見る主張。'],
+['予測と備え','災害への備えは、発生時期を正確に予測できる場合だけに意味があるのではない。時期が不確かでも、避難経路や連絡方法を確認しておけば、いざというときの判断を助ける。不確実性は備えをやめる理由ではなく、備え方を考える条件である。','正確な予測ができなくても、備えには意義がある',['発生時期が分からなければ備えは無駄である','避難経路を確認すれば災害は起こらない','すべてを予測してから連絡方法を決めるべきだ','不確実な状況では一切判断できない'],'予測の限界を認めたうえで、実行可能な準備が判断を助けると述べている。']
+];
+readings.forEach(([theme,passage,answer,others,why],i)=>{V('長文読解',i%3===0?3:2,80,`文章を読み、本文の内容に最も合うものを選びなさい。\n\n${passage}`,[answer,...others],0,why);Object.assign(BANK.at(-1),{id:`reading-extra-${i}`,family:`reading-extra-${i}`,origin:'authored'});});
+// 12 mathematically specified templates × 18 parameter sets = 216 variants.
+const mathNumber=x=>Number(x.toFixed(4)).toLocaleString('ja-JP');
+function variant(family,i,type,level,seconds,text,answer,unit,step,why,verification){
+ const values=[answer,answer+step,answer-step,answer+2*step,answer+3*step];
+ N(type,level,seconds,text,values.map(v=>mathNumber(v)+unit),0,why);
+ Object.assign(BANK.at(-1),{id:`math-${family}-${i}`,family:`math-${family}`,origin:'parameter-variant',verification});
+}
+for(let i=0;i<18;i++){
+ let cost=800+i*100,rate=[10,20,25][i%3],answer=cost*(1+rate/100);
+ variant('profit',i,'損益算',1,50,`原価${cost}円の商品に、原価の${rate}％の利益を見込んで定価を付ける。定価はいくらか。`,answer,'円',50,`利益は${cost}×${rate}/100＝${cost*rate/100}円。定価は原価に利益を足して${mathNumber(answer)}円。`,{kind:'profit',cost,rate});
+ let price=1500+i*200,discount=[10,20,30][i%3];answer=price*(1-discount/100);
+ variant('discount',i,'料金の割引',1,45,`定価${price}円の品物を${discount}％引きで購入した。支払額はいくらか。`,answer,'円',100,`支払う割合は${100-discount}％。${price}×${(100-discount)/100}＝${mathNumber(answer)}円。`,{kind:'discount',price,discount});
+ let speed=60+i*5,minutes=12+i;answer=speed*minutes;
+ variant('distance',i,'速さ',1,50,`一定の分速${speed}mで${minutes}分歩いた。進んだ距離は何mか。`,answer,'m',60,`距離＝速さ×時間。${speed}×${minutes}＝${answer}m。`,{kind:'distance',speed,minutes});
+ let slow=50+i*5,delta=25,delay=5+i;answer=slow*delay/delta;
+ variant('chase',i,'速さ',2,65,`Aが分速${slow}mで出発した。${delay}分後、Bが同じ地点から分速${slow+delta}mで同じ道を追いかける。Bの出発から何分後に追いつくか。`,answer,'分',1,`先行距離は${slow}×${delay}＝${slow*delay}m。毎分${delta}mずつ縮まるので、${slow*delay}÷${delta}＝${mathNumber(answer)}分。`,{kind:'chase',slow,delta,delay});
+ let total=70+i*5,both=10+i,a=30+i*2,b=25+i;answer=total-(a+b-both);
+ variant('sets',i,'集合',2,65,`${total}人に調査した。講座Aの受講者は${a}人、講座Bは${b}人、両方は${both}人だった。どちらも受講していない人は何人か。`,answer,'人',2,`少なくとも一方を受講した人は${a}＋${b}−${both}＝${a+b-both}人。${total}−${a+b-both}＝${answer}人。`,{kind:'sets',total,a,b,both});
+ let n=5+i;answer=n*(n-1)/2;
+ variant('committee',i,'場合の数',2,60,`${n}人から、役割に区別のない委員を2人選ぶ。選び方は何通りか。`,answer,'通り',2,`選ぶ順番を区別しないため、${n}×${n-1}÷2＝${answer}通り。`,{kind:'committee',n});
+ let whole=60000+i*6000,first=[20,25,30][i%3],parts=6;answer=whole*(1-first/100)/parts;
+ variant('installment',i,'分割払い',2,65,`代金${whole}円の${first}％を初回に支払い、残りを${parts}回で均等に支払う。利息や手数料がないとき、残りの1回分はいくらか。`,answer,'円',500,`残額は${whole}×${(100-first)/100}＝${whole*(1-first/100)}円。これを${parts}で割って${mathNumber(answer)}円。`,{kind:'installment',whole,first,parts});
+ let pa=9000+i*900,pb=6000+i*600,pc=3000+i*300;answer=pa-(pa+pb+pc)/3;
+ variant('settlement',i,'代金の精算',2,65,`A、B、Cが費用を等しく負担する。Aは${pa}円、Bは${pb}円、Cは${pc}円を立て替えた。精算でAが受け取る金額の合計はいくらか。`,answer,'円',500,`総額${pa+pb+pc}円を3人で割ると1人${(pa+pb+pc)/3}円。Aの立替超過分は${pa}−${(pa+pb+pc)/3}＝${answer}円。`,{kind:'settlement',pa,pb,pc});
+ let high=8+i%5,low=4,mass=200+i*20;answer=mass*(high/low-1);
+ variant('dilution',i,'濃度',2,70,`${high}％の食塩水${mass}gに水を加え、${low}％にする。加える水は何gか。`,answer,'g',10,`食塩は${mass}×${high}/100＝${mathNumber(mass*high/100)}g。薄めた後の全体は${mathNumber(mass*high/low)}g。元の${mass}gを引いて${mathNumber(answer)}g。`,{kind:'dilution',high,low,mass});
+ let da=6+i,db=2*da;answer=2*da/3;
+ variant('work',i,'仕事算',2,70,`ある仕事はAだけで${da}日、Bだけで${db}日かかる。作業効率が一定で、2人で一緒に働くと何日かかるか。答えは小数第3位を四捨五入し、小数第2位まで求めなさい。`,Number(answer.toFixed(2)),'日',1,`1日あたりの仕事量は1/${da}＋1/${db}＝3/${db}。必要日数は${db}/3＝${answer.toFixed(2)}日（指定の桁に丸める）。`,{kind:'work',da,db});
+ let red=3+i,totalBalls=red+4;answer=red*(red-1)/(totalBalls*(totalBalls-1))*100;
+ variant('probability',i,'確率',3,85,`袋に赤玉${red}個、白玉4個がある。どの玉も同じ確率で選ばれるとして、同時に2個取り出すとき、両方が赤である確率は何％か。小数第3位を四捨五入し、小数第2位まで求めなさい。`,Number(answer.toFixed(2)),'％',2,`赤2個の組合せは${red}×${red-1}/2、全体は${totalBalls}×${totalBalls-1}/2。比を百分率にすると${red}×${red-1}÷(${totalBalls}×${totalBalls-1})×100＝${answer.toFixed(2)}％。`,{kind:'probability',red,totalBalls});
+ let sales1=200+i*10,sales2=300+i*20,r1=10,r2=20;answer=(sales1*r1+sales2*r2)/(sales1+sales2);
+ variant('weighted',i,'表の読み取り',3,80,`2店舗の実績は次のとおり。利益率は売上高に対する利益の割合を表す。\nP店：売上高${sales1}万円、利益率${r1}％\nQ店：売上高${sales2}万円、利益率${r2}％\n2店舗合計の利益率は何％か。小数第3位を四捨五入し、小数第2位まで求めなさい。`,Number(answer.toFixed(2)),'％',1,`利益の合計は${sales1*r1/100}＋${sales2*r2/100}＝${(sales1*r1+sales2*r2)/100}万円。売上高の合計${sales1+sales2}万円で割り、100を掛けると${answer.toFixed(2)}％。率だけを単純平均しない。`,{kind:'weighted',sales1,sales2,r1,r2});
+}
+</script><script>// Rational answers are exact; options are reduced before deduplication.
+function gcd(a,b){while(b){[a,b]=[b,a%b]}return Math.abs(a);}
+function fraction(n,d){const g=gcd(n,d);return d/g===1?String(n/g):`${n/g}/${d/g}`;}
+function fractionOptions(n,d){const answer=fraction(n,d);const options=[answer];for(const [a,b] of [[n+1,d],[n-1,d],[n,d+1],[d-n,d],[1,2],[1,3],[2,3],[1,4],[3,4]]){if(a<=0||a>=b)continue;const f=fraction(a,b);if(!options.includes(f))options.push(f);if(options.length===5)break;}if(options.length!==5)throw Error('Insufficient fraction options');return options;}
+for(const q of BANK){
+ if(q.verification?.kind==='probability'){
+  const {red:r,totalBalls:t}=q.verification,n=r*(r-1),d=t*(t-1);
+  q.text=`袋に赤玉${r}個、白玉4個がある。すべての玉が同じ確率で選ばれるとして、同時に2個取り出すとき、両方が赤玉である確率を選びなさい。`;
+  q.options=fractionOptions(n,d);q.answer=0;q.level=2;q.seconds=65;
+  q.explanation=`取り出す順に考えると、1個目が赤である確率は${r}/${t}、その後2個目も赤である確率は${r-1}/${t-1}。積は${n}/${d}＝${fraction(n,d)}。同時に取り出す場合も組合せの比から同じ結果になる。`;
+ }
+ if(q.verification?.kind==='work'){
+  const {da,db}=q.verification,n=da*db,d=da+db;
+  q.text=`ある仕事はAだけで${da}日、Bだけで${db}日かかる。作業効率が一定で、2人で一緒に働くと何日かかるか。`;
+  q.options=[n,n+d,n-d,n+2*d,n+3*d].map(x=>fraction(x,d)+'日');q.answer=0;
+  q.explanation=`1日あたりの仕事量は1/${da}＋1/${db}。必要日数はその逆数なので${n}/${d}＝${fraction(n,d)}日。途中で小数に丸めずに計算する。`;
+ }
+}
+</script><script>// Independent English practice questions. No source-site questions are reproduced.
+function E(id,type,level,seconds,text,options,explanation){add('英語',type,level,seconds,text,options,0,explanation);BANK.at(-1).id='eng-'+id;BANK.at(-1).origin='authored';}
+const englishWords=[
+// Each level has ten synonym and ten antonym questions.
+['begin','start','始める','finish|carry|choose|borrow'],
+['quick','fast','速い','heavy|quiet|empty|narrow'],
+['large','big','大きい','soft|early|thin|weak'],
+['silent','quiet','静かな','busy|bright|honest|cheap'],
+['purchase','buy','購入する','sell|lend|break|wait'],
+['assist','help','助ける','hide|refuse|count|leave'],
+['difficult','hard','難しい','simple|safe|warm|fresh'],
+['reply','answer','返答する','arrive|repeat|forget|invite'],
+['glad','happy','うれしい','angry|tired|careless|plain'],
+['select','choose','選ぶ','repair|deliver|follow|sleep'],
+['accurate','precise','正確な','vague|distant|silent|fragile'],
+['brief','short','簡潔な、短い','broad|frequent|eager|rough'],
+['maintain','preserve','維持する','abandon|predict|borrow|divide'],
+['require','need','必要とする','offer|avoid|admire|remove'],
+['expand','enlarge','拡大する','reduce|conceal|imitate|replace'],
+['reliable','dependable','信頼できる','temporary|reluctant|costly|distant'],
+['rapid','swift','素早い','steady|minor|silent|severe'],
+['postpone','delay','延期する','approve|complete|notice|measure'],
+['annual','yearly','年に一度の','daily|weekly|monthly|hourly'],
+['sufficient','adequate','十分な','scarce|awkward|separate|sudden'],
+['mitigate','alleviate','軽減する','intensify|imitate|conceal|designate'],
+['obsolete','outdated','時代遅れの','promising|durable|impartial|flexible'],
+['meticulous','thorough','細部まで注意深い','careless|hesitant|temporary|hostile'],
+['plausible','credible','もっともらしい','irrelevant|transparent|obsolete|tedious'],
+['reluctant','unwilling','気が進まない','eager|confident|generous|precise'],
+['ambiguous','unclear','曖昧な','explicit|sincere|permanent|abundant'],
+['impartial','unbiased','公平な','hostile|generous|flexible|vague'],
+['indispensable','essential','不可欠な','optional|convenient|temporary|minor'],
+['coherent','consistent','筋の通った','fragmented|frequent|visible|reluctant'],
+['prudent','cautious','慎重な','reckless|creative|loyal|prompt']
+];
+englishWords.forEach(([w,a,ja,other],i)=>E('syn-'+w,'同意語',Math.floor(i/10)+1,35,`「${w}」に最も近い意味の語を選びなさい。`,[a,...other.split('|')],`${w} は「${ja}」。選択肢では ${a} が最も近い意味。`));
+const englishOpposites=[
+['early','late','早い／遅い','young|near|light|free'],['empty','full','空の／いっぱいの','quiet|narrow|simple|weak'],['increase','decrease','増える／減る','include|describe|repeat|collect'],['accept','reject','受け入れる／拒否する','receive|allow|notice|expect'],['cheap','expensive','安い／高価な','useful|popular|modern|fresh'],['strong','weak','強い／弱い','wide|short|heavy|clean'],['public','private','公の／私的な','local|famous|common|usual'],['remember','forget','覚えている／忘れる','learn|read|explain|imagine'],['safe','dangerous','安全な／危険な','easy|bright|soft|lonely'],['arrive','depart','到着する／出発する','visit|return|travel|reach'],
+['permanent','temporary','永久の／一時的な','solid|regular|accurate|formal'],['expand','contract','拡大する／縮小する','extend|develop|support|examine'],['optimistic','pessimistic','楽観的な／悲観的な','patient|practical|polite|curious'],['complex','simple','複雑な／単純な','complete|detailed|modern|normal'],['flexible','rigid','柔軟な／融通の利かない','stable|smooth|gentle|active'],['scarce','plentiful','乏しい／豊富な','costly|delicate|distant|visible'],['voluntary','compulsory','自発的な／強制の','careful|frequent|personal|gradual'],['superior','inferior','優れた／劣った','major|similar|external|various'],['profit','loss','利益／損失','income|price|budget|capital'],['permit','prohibit','許可する／禁止する','suggest|arrange|confirm|predict'],
+['explicit','implicit','明示された／暗黙の','precise|urgent|rational|external'],['diligent','idle','勤勉な／怠惰な','cautious|modest|eager|loyal'],['converge','diverge','収束する／分岐する','combine|approach|cooperate|settle'],['benevolent','malevolent','慈善的な／悪意のある','generous|tolerant|sociable|impartial'],['transparent','opaque','透明な／不透明な','visible|fragile|smooth|hollow'],['plausible','implausible','もっともらしい／信じがたい','credible|logical|probable|coherent'],['inhibit','encourage','抑制する／促す','restrict|hinder|prevent|restrain'],['deteriorate','improve','悪化する／改善する','decline|weaken|worsen|decay'],['concise','verbose','簡潔な／冗長な','brief|clear|accurate|relevant'],['lenient','strict','寛大な／厳格な','gentle|patient|tolerant|generous']
+];
+englishOpposites.forEach(([w,a,ja,other],i)=>E('ant-'+w,'反意語',Math.floor(i/10)+1,35,`「${w}」と反対の意味に最も近い語を選びなさい。`,[a,...other.split('|')],`${w} と ${a} は「${ja}」という反対の関係。`));
+const englishDefinitions=[
+['library','a place where people can read or borrow books','hospital|factory|station|kitchen','本を読んだり借りたりできる場所＝図書館。'],
+['neighbor','a person who lives near your home','visitor|customer|pilot|author','近所に住んでいる人＝隣人。'],
+['ticket','a document that gives you permission to enter an event or travel','letter|map|receipt|menu','入場や乗車を認める券＝ticket。receipt は購入の受領書。'],
+['weather','the conditions outside, such as rain, wind, and temperature','season|distance|landscape|direction','雨・風・気温などの状態＝天気。'],
+['deadline','the latest time by which a task must be completed','schedule|duration|interval|appointment','完了しなければならない最終時点＝期限。'],
+['refund','money returned to someone who has paid for something','deposit|salary|discount|budget','支払った人に返されるお金＝返金。discount は値引き。'],
+['colleague','a person who works with you in the same organization','applicant|passenger|landlord|opponent','同じ組織で一緒に働く人＝同僚。'],
+['inventory','a complete list of items held by a business','invoice|revenue|warranty|expense','企業が保有する品目の一覧＝在庫目録。invoice は請求書。'],
+['consensus','general agreement among the members of a group','dispute|incentive|exception|obligation','集団内での一般的な合意＝consensus。'],
+['contingency','a possible future event that may require special action','certainty|precedent|routine|revenue','特別な対応が必要になりうる不測の事態＝contingency。'],
+['incentive','something that motivates a person to take action','obstacle|restriction|consequence|assumption','人を行動へ動機付けるもの＝incentive。'],
+['discrepancy','a difference between things that should match','consistency|priority|permission|compromise','一致するはずのものの不一致＝discrepancy。']
+];
+englishDefinitions.forEach(([a,d,other,why],i)=>E('def-'+a,'英英辞典',Math.floor(i/4)+1,40,`次の説明に当てはまる語を選びなさい。\n\n${d}`,[a,...other.split('|')],why));
+const englishCloze=[
+['She usually (     ) to the office by bus.','goes','go|going|gone|to go','主語が三人称単数で現在の習慣を表すため goes。'],
+['There are (     ) chairs in this room than in the next one.','fewer','less|little|much|few','数えられる複数名詞 chairs と比較の than があるため fewer。'],
+['We have lived here (     ) 2020.','since','for|during|until|by','継続の起点となる年には since を使う。for は期間を表す。'],
+['Please turn off the lights before (     ) the room.','leaving','leave|left|leaves|to leave','前置詞 before の後に動作を置くので動名詞 leaving。'],
+['The meeting was postponed (     ) the manager was ill.','because','although|unless|despite|whereas','延期の理由を述べる because。despite の後にはこの形の節を直接置けない。'],
+['The new device is capable (     ) processing large amounts of data.','of','to|with|for|by','be capable of -ing で「〜できる」。'],
+['If I (     ) more time, I would review the report again.','had','have|will have|having|has','現在の事実と異なる仮定。if節では過去形 had、主節では would。'],
+['Neither the director nor the assistants (     ) available now.','are','is|was|be|being','neither A nor B の主語では近い名詞 assistants に合わせ、現在の複数形 are。'],
+['Had we known about the delay, we (     ) a different route.','would have taken','will take|would take|have taken|take','Had we known は If we had known の倒置。過去の反事実の結果は would have＋過去分詞。'],
+['The proposal, (     ) merits are clear, still needs financial approval.','whose','which|that|whom|what','merits を所有関係で修飾する関係詞 whose。「その提案の長所」。'],
+['Not until the audit was finished (     ) the problem.','did they discover','they discovered|they had discovered|they discover|have they discover','否定表現 Not until を文頭に置くと主節は倒置。did＋主語＋原形。'],
+['The director insisted that every applicant (     ) treated equally.','be','is|was|being|has','要求を表す insist that の節では動詞原形を用いる。受動態の原形 be treated。']
+];
+englishCloze.forEach(([q,a,other,why],i)=>E('cloze-'+i,'空欄補充',Math.floor(i/4)+1,45,`空欄に入る最も適切なものを選びなさい。\n\n${q}`,[a,...other.split('|')],why));
+const englishReadings=[
+['The museum will close at four this Friday, two hours earlier than usual, because staff need to prepare for a new exhibition. Tickets already purchased for Friday afternoon may be used on Saturday instead. The morning opening time will not change.','What is true about Friday?','The museum will close earlier than usual.',['The museum will not open.','All tickets must be used on Friday.','The museum will open two hours later.','The new exhibition will end on Friday.'],'金曜は通常より2時間早い4時閉館。金曜午後の券は土曜にも使え、朝の開館時間は変わらない。',1],
+['Mia cycles to work when the weather is dry. On rainy days, she takes a train. Her bicycle needed repairs on Monday, so she used the train even though it was sunny. The bicycle was ready the following evening.','Why did Mia take the train on Monday?','Her bicycle needed repairs.',['She always takes the train.','It was raining heavily.','She had sold her bicycle.','The road was closed.'],'晴れていても自転車が修理中だったので電車を使ったと述べている。',1],
+['A company tested a four-day working week for three months. Employees reported less stress, while the number of completed projects remained stable. However, the trial took place during a quiet period. The company plans another trial during its busiest season before making a permanent decision.','Why is another trial planned?','To examine whether the results hold during a busy period.',['To prove that projects were never completed.','To replace all current employees.','To eliminate every working day.','To test a policy already made permanent.'],'最初の試行は閑散期だったため、繁忙期でも結果が維持されるか調べる。',2],
+['A neighborhood shop began offering online orders. Total sales increased, but deliveries also raised operating costs. The owner is now comparing the additional profit with the cost of employing a driver. More orders alone do not show whether the service is financially worthwhile.','What is the main point?','Both added income and added costs must be considered.',['Delivery is always more profitable than in-store shopping.','The shop has already dismissed its driver.','Online orders caused total sales to fall.','Operating costs are unrelated to profitability.'],'注文数や売上の増加だけでなく、配送等の追加費用も含めた評価が必要。',2],
+['A study found that people who regularly attended public lectures were more likely to volunteer. The researchers warned against concluding that lectures caused this difference. People already interested in community life might be more inclined both to attend lectures and to volunteer. A follow-up study will examine participants before and after they begin attending.','Which conclusion is best supported?','An existing interest may help explain both behaviors.',['Lectures have been proved to cause volunteering.','Volunteers never attend lectures.','The follow-up study has already confirmed causation.','Community interests cannot affect participation.'],'地域活動への既存の関心が、講演への参加とボランティアの両方を説明する可能性がある。因果関係は確定していない。',3],
+['A city installed sensors to measure traffic at several busy intersections. The data helped adjust signal timings and reduce delays there. Yet planners noted that the sensors covered only a small part of the road network. Traffic might simply have shifted to unmonitored streets. They therefore proposed extending measurement before describing the project as a citywide success.','What limitation do the planners identify?','Unmeasured streets may have experienced displaced traffic.',['No signal timings were changed.','The sensors measured every street in the city.','Delays increased at every monitored intersection.','Citywide benefits have already been established.'],'観測地点の改善が他の道路への交通移動で生じた可能性を指摘。全市の成功を論じる前に測定範囲を広げるとしている。',3]
+];
+englishReadings.forEach(([p,q,a,others,why,l],i)=>E('read-'+i,'長文読解',l,85,`${p}\n\n${q}`,[a,...others],why));
+</script><script>// Remove out-of-scope content from the active bank, rather than relabeling it.
+for(let i=BANK.length-1;i>=0;i--)if(['濃度','数列','装置と回路','物の流れ','グラフの領域','不等式と領域','条件と領域'].includes(BANK[i].type))BANK.splice(i,1);
+const structures=[['往復',1,1,'往く・復るという反対の意味。'],['明暗',1,1,'明るい・暗いという反対の意味。'],['左右',1,1,'左・右という対になる意味。'],['大小',1,1,'大きい・小さいという反対の意味。'],['開閉',1,1,'開ける・閉めるという反対の意味。'],['強弱',1,1,'強い・弱いという反対の意味。'],['登山',2,3,'山に登る。後ろの漢字が動作の対象。'],['着席',2,3,'席に着く。後ろの漢字が動作の対象。'],['送金',2,3,'金を送る。動作とその目的語。'],['造船',2,3,'船を造る。動作とその目的語。'],['温水',2,2,'温かい水。「温」が「水」を修飾する。'],['深海',2,2,'深い海。「深」が「海」を修飾する。'],['日没',3,4,'日が没する。主語と述語。'],['市営',3,4,'市が営む。主語と述語。'],['地震',3,4,'地が震える。主語と述語。'],['岩石',3,0,'岩・石という近い意味の漢字。'],['道路',3,0,'道・路という近い意味の漢字。'],['救助',3,0,'救う・助けるという近い意味の漢字。']];
+structures.forEach(([word,l,a,why],i)=>{V('熟語の成り立ち',l,35,`「${word}」の成り立ちとして最も適切なものを選びなさい。`,['似た意味を重ねる','反対・対になる意味を重ねる','前の漢字が後ろを修飾する','動作とその対象','主語と述語'],a,why);BANK.at(-1).id='web-structure-'+i;});
+const triples=[
+['新しい資料を（ア）し、誤りを（イ）したうえで、担当者に（ウ）した。',['確認','修正','提出'],'確認→修正→提出。資料を確かめ、誤りを直し、渡す流れ。',1],
+['まず参加人数を（ア）し、必要な席数を（イ）して、会場を（ウ）した。',['把握','算出','予約'],'人数を把握し、席数を計算し、会場を予約する。',1],
+['実験結果を（ア）するには、条件をそろえて比較し、偶然の影響を（イ）したうえで結論を（ウ）する必要がある。',['評価','検討','導出'],'結果を評価し、影響を検討し、結論を導出するという結び付き。',2],
+['異なる意見を（ア）し、共通点を（イ）することで、双方が納得する案を（ウ）した。',['整理','抽出','作成'],'意見を整理し、共通点を抽出し、案を作成するという流れ。',2],
+['古い規則を無条件に（ア）するのではなく、目的との整合性を（イ）し、必要なら制度を（ウ）すべきだ。',['踏襲','検証','改訂'],'踏襲＝受け継ぐ、検証＝確かめる、改訂＝内容を改める。',3],
+['限られた事例から傾向を（ア）しても、それをすべての集団へ（イ）する前に、別の資料で妥当性を（ウ）したい。',['推測','一般化','検証'],'傾向の推測→適用範囲の一般化→妥当性の検証。それぞれの対象に合う語を選ぶ。',3]
+];
+triples.forEach(([text,words,why,l],i)=>{const orders=[[0,1,2],[0,2,1],[1,0,2],[1,2,0],[2,0,1]];V('空欄補充（3語）',l,60,`ア・イ・ウに入る語の組合せとして最も適切なものを選びなさい。\n\n${text}`,orders.map(p=>p.map(k=>words[k]).join(' ／ ')),0,why);BANK.at(-1).id='web-triple-'+i;});
+const phrases=[
+[['計画を','実行する','前に','必要な費用を','確認した。'],[0,1,2,3,4],1,'「計画を実行する前に」が時を表し、「必要な費用を確認した」が続く。'],
+[['この道を','まっすぐ進むと','右側に','図書館が','見えてくる。'],[0,1,2,3,4],1,'進む方向の条件と、右側に図書館が見えるという結果のつながり。'],
+[['調査の','対象を','広げることで','従来とは異なる','傾向が明らかになった。'],[0,1,2,3,4],2,'「調査の対象を広げることで」が原因、「従来とは異なる傾向」が結果の主語。'],
+[['意見の','違いを','明らかにすることは','必ずしも対立を','深めることではない。'],[0,1,2,3,4],2,'「意見の違いを明らかにすることは」を主題に、対立を深めることを否定する。'],
+[['判断の根拠を','共有しないまま','結論だけを','伝えても','理解を得られるとは限らない。'],[0,1,2,3,4],3,'根拠の共有がないという条件のもとで、結論だけを伝える行為とその限界を述べる。'],
+[['目先の効率を','優先するあまり','長期的な','改善の機会を','失ってはならない。'],[0,1,2,3,4],3,'「優先するあまり」は行き過ぎた原因。「長期的な改善の機会」が失う対象。']
+];
+phrases.forEach(([parts,order,l,why],i)=>{const scrambled=[parts[2],parts[4],parts[0],parts[3],parts[1]];const right='ウ→オ→ア→エ→イ';V('文節の並び換え',l,60,`次の文節を自然な一文になるように並べたものを選びなさい。\n${scrambled.map((p,j)=>'アイウエオ'[j]+'：'+p).join('\n')}`,[right,'ウ→オ→エ→イ→ア','オ→ア→イ→ウ→エ','エ→オ→ウ→ア→イ','ウ→エ→ア→オ→イ'],0,why);BANK.at(-1).id='phrase-'+i;});
+for(const q of BANK){
+ if(q.section==='英語')q.formats=['center'];
+ else if(q.section==='言語')q.formats=['熟語の成り立ち','空欄補充（3語）'].includes(q.type)?['web']:['長文読解','文節の並び換え'].includes(q.type)?['center','web']:['center'];
+ else if(['代金の精算','料金の割引','分割払い','推論・順序','推論・条件'].includes(q.type))q.formats=['center'];
+ else if(q.type==='仕事算')q.formats=['center','web'];
+ else q.formats=['center','web'];
+ // Numeric entry is used for WEB quantitative problems with a numeric answer.
+ if(q.section==='非言語'&&q.formats.includes('web')){const m=q.options[q.answer].replace(/,/g,'').match(/^(-?\d+(?:\.\d+)?(?:\/\d+)?)(.*)$/);if(m){q.numericAnswer=m[1];q.unit=m[2];}}
+}
+
+</script><script>function rulesMarkup(){return `<details class="panel details"><summary>出題範囲・本番との違い</summary><div class="content"><p>本サイトは非公式のオリジナル模試です。テストセンター形式の実戦模試は言語20問・非言語20問を合計35分で解き、続けて英語30問・20分に進みます。英語は本番では企業による追加検査です。この模試では英語の練習を含めるために組み込んでいます。</p><p>WEBテスティング形式の実戦模試は言語20問・非言語20問・35分で、英語はありません。テストセンターのオンライン会場とWEBテスティングは別の方式です。ミニ模試は両形式とも言語5問・非言語5問・10分、英語練習はテストセンター形式で選べます。</p><table class="format-table"><tr><th>収録する形式の違い</th><th>テストセンター</th><th>WEB</th></tr><tr><td>二語の関係・語句の意味</td><td>あり</td><td>なし</td></tr><tr><td>熟語の成り立ち・3語補充</td><td>なし</td><td>あり</td></tr><tr><td>文節の並び換え・読解</td><td>あり</td><td>あり</td></tr><tr><td>精算・割引・分割払い</td><td>あり</td><td>なし</td></tr><tr><td>仕事算</td><td>あり</td><td>あり</td></tr><tr><td>非言語の数値解答</td><td>選択式</td><td>数値入力</td></tr><tr><td>英語</td><td>実戦模試に含む</td><td>なし</td></tr></table><p>装置と回路・物の流れ・領域などのペーパー専用分野は収録対象外です。従来の濃度算20問と数列1問は、今回の対象として十分に確認できなかったため削除しました。濃度算については対策サイト間で説明に差があり、「ペーパー専用」と断定したものではありません。両形式と共通する分野の問題は残しています。</p><p>難易度は各科目で標準から始まり、正解なら基礎→標準→応用、不正解・時間切れならその逆に1段階動きます。上下限は基礎・応用です。次の難易度に未使用の問題がなければ近い段階を使います。その段階で出題回数の少ない問題を優先します。本番の非公開の適応型アルゴリズム・得点尺度は再現していません。ジャンルや難易度は解答中には表示せず、終了後の解説で確認できます。</p><p>1問の上限は30〜85秒の独自設定です。基礎能力の時間が切れると未出題分を残して英語に進みます。基礎能力を早く解き終わっても英語に時間は持ち越しません。英語の終了で全体を採点します。未回答・未出題も正答率の分母に含みます。問題数や出題順は練習用の固定構成です。</p><p>WEBの数値入力は分数（3/4等）にも対応し、等しい値を正解とします。数値でない推論は選択式です。履歴はこのブラウザーだけに保存されます。再読み込みで進行中の解答は失われますが、保存済みの出題履歴は残ります。画面を離れても計時は続きます。性格検査・構造的把握力検査は対象外です。</p></div></details><details class="panel details"><summary>参考資料と調査方針 · 2026年9月12日確認</summary><div class="content"><ul><li><a href="https://www.recruit-ms.co.jp/freshers/spi-010.html" target="_blank" rel="noopener">リクルートMS公式：WEBテスティングについて</a><br>WEBは言語・非言語であること、テストセンターのオンライン会場とは別方式であることを確認。</li><li><a href="https://www.spi.recruit.co.jp/testcenter/faq.html" target="_blank" rel="noopener">SPI公式FAQ</a> ／ <a href="https://www.spi.recruit.co.jp/spi3news/000604.html" target="_blank" rel="noopener">開発者インタビュー（2026年4月14日）</a><br>英語の追加検査と適応型出題の基本を確認。</li><li><a href="https://spi-webtest.com/subject/" target="_blank" rel="noopener">SPI対策サイト：科目・出題範囲（2025年8月16日更新表記）</a> ／ <a href="https://spi-webtest.com/practice-questions/" target="_blank" rel="noopener">練習問題集</a><br>形式別の分野と分数解答などを確認。数値・正答は独立して検証。</li><li><a href="https://www.spi-online.net/exam/" target="_blank" rel="noopener">SPIオンライン：模擬試験</a><br>テストセンターの速度算・損益算・確率・推論・語句などの構成を参考にしました。同サイト独自の模試時間は本番時間の根拠にしていません。</li><li><a href="https://spicompass.com/" target="_blank" rel="noopener">SPI Compass</a><br>受検形式別に演習を分ける構成と復習導線を参考にしました。形式別の出題範囲は他資料とも照合。</li><li><a href="https://saisokuspi.com/gaiyou/taisaku_testcenter/3/20/" target="_blank" rel="noopener">Study Pro：形式別の出題範囲比較（2028年卒向け表記）</a><br>言語・非言語・英語の比較表で照合。卒年の表記を更新日の証拠とはしていません。</li><li><a href="https://www.otona-juku.com/spi-preparation/web_testing/" target="_blank" rel="noopener">大人塾：WEBテスティング非言語対策</a><br>数値入力・電卓利用・仕事算等の範囲を確認。</li><li><a href="https://www.jasso.go.jp/ryugaku/after_study_j/job/guide.html" target="_blank" rel="noopener">JASSO：就活ガイド2027</a> ／ <a href="https://careerpark.jp/50702" target="_blank" rel="noopener">キャリアパーク：英語検査（2021年10月1日更新）</a><br>時間枠の参考資料。問題数は本サイト独自の設定です。</li></ul><p>問題は転載せず独自に作成しています。公開日の新しさだけでなく、公式性・形式ごとの記述・複数資料の一致を重視しました。対策サイト間で範囲が異なる部分は保守的に振り分けています。全出題分野の網羅や、年度別の本番問題の再現を保証するものではありません。上記は手動確認日で、自動更新機能はありません。</p></div></details>`;}
+</script><script>const app=document.querySelector('#app');
+let mode='full',format='center',state=null,ticker=null;
+const LEVELS=['','基礎','標準','応用'];
+const FORMAT_NAMES={center:'テストセンター',web:'WEBテスティング'};
+function config(m=mode){const basic={label:'基礎能力',seconds:m==='short'?600:2100,parts:[{name:'言語',count:m==='short'?5:20},{name:'非言語',count:m==='short'?5:20}]};const english={label:'英語',seconds:1200,parts:[{name:'英語',count:30}]};const blocks=m==='english'?[english]:m==='full'&&format==='center'?[basic,english]:[basic];return {title:m==='english'?'英語練習':m==='short'?'ミニ模試':'実戦模試',blocks,parts:blocks.flatMap(b=>b.parts),minutes:blocks.reduce((n,b)=>n+b.seconds,0)/60,count:blocks.flatMap(b=>b.parts).reduce((n,p)=>n+p.count,0)};}
+function pool(section){return BANK.filter(q=>q.section===section&&q.formats.includes(format));}
+
+const HISTORY_KEY='spi-focus-exposure-v2';
+let exposure={},historyAvailable=true;
+try { const value=JSON.parse(localStorage.getItem(HISTORY_KEY)||'{}'); if(value&&typeof value==='object'&&!Array.isArray(value)){for(const q of BANK){const n=value[q.id];if(Number.isSafeInteger(n)&&n>0)exposure[q.id]=n;}} localStorage.setItem(HISTORY_KEY,JSON.stringify(exposure)); } catch { historyAvailable=false; }
+function remember(q){exposure[q.id]=(exposure[q.id]||0)+1;try{localStorage.setItem(HISTORY_KEY,JSON.stringify(exposure));}catch{historyAvailable=false;}}
+function unseen(section){return BANK.filter(q=>(!section||q.section===section)&&!exposure[q.id]).length;}
+function selectQuestion(section){
+ const candidates=shuffle(BANK.filter(q=>q.section===section&&q.formats.includes(state.format)&&!state.used.has(q.id)));
+ if(!candidates.length)throw Error('Question pool exhausted');
+ const types={},families={};for(const a of state.answers){types[a.q.type]=(types[a.q.type]||0)+1;const f=a.q.family||a.q.id;families[f]=(families[f]||0)+1;}
+ const target=state.levels[section]||2;
+ candidates.sort((a,b)=>Math.abs(a.level-target)-Math.abs(b.level-target)||(exposure[a.id]||0)-(exposure[b.id]||0)||(families[a.family||a.id]||0)-(families[b.family||b.id]||0)||(types[a.type]||0)-(types[b.type]||0));
+ const q=candidates[0],order=shuffle(q.options.map((_,i)=>i));return {...q,options:order.map(i=>q.options[i]),answer:order.indexOf(q.answer),input:state.format==='web'&&q.numericAnswer!==undefined?'numeric':'choice'};
+}
+function progressMarkup(){const c=config(),available=BANK.filter(q=>q.formats.includes(format)&&c.parts.some(p=>p.name===q.section));return '<section class="practice-progress panel"><div><span class="eyebrow">QUESTION LIBRARY</span><h2>'+BANK.length+'問のオリジナル問題</h2><p>選択形式の対象：'+available.length+'問（数値違いの類題を含む）</p></div><div class="unseen"><strong>'+available.filter(q=>!exposure[q.id]).length+'</strong><span>選択形式の未出題</span></div><p class="storage-note">'+(historyAvailable?'出題履歴をこのブラウザーに保存中。自動調整した難易度の中で未出題を優先します。':'履歴を保存できません。画面を開いている間だけ出題履歴を保持します。')+' 別の端末とは同期しません。</p></section>';}
+function numericValue(text){const t=String(text).normalize('NFKC').replace(/\s/g,'');if(!/^-?\d+(?:\.\d+)?(?:\/\d+)?$/.test(t))return null;const [a,b=1]=t.split('/').map(Number);const v=a/b;return b!==0&&Number.isFinite(v)?v:null;}
+function answerControls(q){return q.input==='numeric'?'<label class="numeric-label" for="numeric-answer">解答</label><div class="numeric-row"><input id="numeric-answer" type="text" autocomplete="off" spellcheck="false" aria-describedby="numeric-hint" maxlength="40"><span>'+esc(q.unit||'')+'</span></div><p class="hint" id="numeric-hint">数値だけを入力してください。分数は 3/4 のように入力できます。単位は不要です。</p>':'<div class="options" role="group" aria-label="解答の選択肢">'+q.options.map((o,i)=>'<button class="option" data-answer="'+i+'" aria-pressed="false"><span class="letter">'+'ABCDE'[i]+'</span><span>'+esc(o)+'</span></button>').join('')+'</div>';}
+
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmt=s=>`${String(Math.floor(Math.max(0,s)/60)).padStart(2,'0')}:${String(Math.floor(Math.max(0,s)%60)).padStart(2,'0')}`;
+const shuffle=a=>{a=[...a];for(let i=a.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+function home(){clearInterval(ticker);state=null;if(format==='web'&&mode==='english')mode='full';const c=config();app.innerHTML=`<p class="eyebrow">PRACTICE / SPI</p><h1 class="page-title">本番の形式に合わせて、練習する。</h1><p class="intro">難易度は正誤に応じて自動調整。まずは受検形式を選ぼう。</p><div class="layout"><section class="panel"><div class="panel-body"><h2 class="panel-heading"><span class="small-step">01</span>受検形式</h2><div class="format-options">${Object.entries(FORMAT_NAMES).map(([k,n])=>`<button class="difficulty-option ${format===k?'active':''}" data-format="${k}" aria-pressed="${format===k}"><strong>${n}</strong><small>${k==='center'?'選択式・電卓なし':'非言語は数値入力・電卓可'}</small></button>`).join('')}</div><h2 class="panel-heading"><span class="small-step">02</span>模試を選ぶ</h2><div class="modes">${(format==='center'?['full','short','english']:['full','short']).map(k=>{const m=config(k);return `<button class="mode ${mode===k?'active':''}" data-mode="${k}" aria-pressed="${mode===k}"><span class="radio"></span><small>${k==='full'?'FULL PRACTICE':k==='short'?'QUICK PRACTICE':'ENGLISH'}</small><strong>${m.title}</strong><span class="minutes">${m.minutes}<small>分</small></span><span class="count">全${m.count}問</span></button>`}).join('')}</div><div class="adaptive-note"><b>基礎 ⇄ 標準 ⇄ 応用</b><p>各科目は標準から開始。正解なら1段階上、不正解・時間切れなら1段階下を目安に、次の問題を選びます。</p></div><div class="rules-strip"><span>問題別タイマー</span><span>解答後の戻り不可</span><span>ジャンル表示なし</span></div><button class="start" id="start">${c.title}を開始する <span aria-hidden="true">→</span></button><p class="hint">クリックすると計時開始。メモ用紙と筆記具${format==='web'?'、電卓':''}をご用意ください。</p></div></section><aside class="panel side"><div class="panel-body"><h2>今回の構成</h2>${c.blocks.map(b=>`<div class="structure"><div><strong>${b.label} · ${b.seconds/60}分</strong><p>${b.parts.map(p=>p.name+' '+p.count+'問').join(' → ')}</p></div></div>`).join('')}<div class="side-note">${format==='center'&&mode==='full'?'基礎能力の終了後、そのまま英語へ進みます。残り時間は持ち越しません。':format==='web'?'WEBテスティングには英語を含めません。英語を含む実戦模試はテストセンター形式を選んでください。':'選択した科目を練習できます。'}<br>英語は本番では企業による追加検査です。</div></div></aside></div><p class="format-summary">${c.blocks.map(b=>b.parts.map(p=>p.name+' '+p.count+'問').join('・')+'（'+b.seconds/60+'分）').join(' → ')}${format==='web'?' ／ 英語なし':''}</p>${progressMarkup()}${rulesMarkup()}`;
+app.querySelectorAll('[data-format]').forEach(b=>b.onclick=()=>{format=b.dataset.format;home()});app.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>{mode=b.dataset.mode;home()});document.querySelector('#start').onclick=start;}
+
+function start(){clearInterval(ticker);const now=Date.now(),c=config();state={...c,format,start:now,duration:c.minutes*60,answers:[],used:new Set(),levels:{言語:2,非言語:2,英語:2},selected:null,current:null,active:true,notice:'',position:0,block:0,blockStart:now,elapsedPrior:0};state.slots=c.blocks.flatMap((b,bi)=>b.parts.flatMap(p=>Array.from({length:p.count},()=>({section:p.name,block:bi}))));state.end=now+c.blocks[0].seconds*1000;next();ticker=setInterval(tick,150);}
+function advanceBlock(timedOut=false){const now=Date.now();state.elapsedPrior+=Math.min(state.blocks[state.block].seconds,(now-state.blockStart)/1000);if(timedOut){while(state.position<state.count&&state.slots[state.position].block===state.block)state.position++;}state.current=null;state.block++;if(state.block>=state.blocks.length){finish(timedOut?'time':'complete');return;}state.blockStart=timedOut?state.end:now;state.end=state.blockStart+state.blocks[state.block].seconds*1000;state.notice='基礎能力が終了しました。ここから英語の20分が始まります。';next();}
+function next(){if(state.position>=state.count){finish('complete');return;}if(state.slots[state.position].block!==state.block){advanceBlock();return;}if(Date.now()>=state.end){expireBlock();return;}const section=state.slots[state.position].section;state.current=selectQuestion(section);state.used.add(state.current.id);remember(state.current);state.selected=null;state.qStart=Date.now();state.qEnd=state.qStart+state.current.seconds*1000;renderQuestion();tick();}
+function saveAnswer(expired){const q=state.current;if(!q)return;const selected=expired?null:state.selected;const correct=selected!==null&&(q.input==='numeric'?numericValue(selected)!==null&&Math.abs(numericValue(selected)-numericValue(q.numericAnswer))<1e-9:selected===q.answer);state.answers.push({q,selected,correct,expired,number:state.position+1,seconds:Math.min(q.seconds,Math.max(0,(Date.now()-state.qStart)/1000))});state.levels[q.section]=Math.max(1,Math.min(3,q.level+(correct?1:-1)));state.position++;state.current=null;}
+function expireBlock(){saveAnswer(true);advanceBlock(true);}
+
+function renderQuestion(){const q=state.current;app.innerHTML=`<div class="exam-top"><div><p class="eyebrow">PRACTICE</p><h1>受検中</h1></div><button class="button-quiet" id="quit">模試を終了</button></div>${state.notice?`<div class="notice" role="status">${state.notice}</div>`:''}<div class="layout exam-layout"><section class="panel"><div class="question-head"><span class="q-number">QUESTION ${String(state.position+1).padStart(2,'0')}</span></div><div class="panel-body"><h2 class="question-text" tabindex="-1">${esc(q.text)}</h2>${answerControls(q)}<button class="start" id="submit" disabled>解答して${state.position===state.count-1?'結果へ':'次へ'} <span aria-hidden="true">→</span></button><p class="hint">確定後は戻れません。未選択のまま時間切れになると未回答になります。</p></div></section><aside class="panel"><div class="time-panel"><div class="time-label">この問題の残り時間</div><div class="timer" id="q-time" aria-label="問題の残り時間"></div><div class="track"><div class="fill" id="time-fill"></div></div><div class="total-clock"><span>この検査の残り時間</span><b id="all-time"></b></div><div class="time-label progress-label">進捗　${state.position} / ${state.count} 問</div><div class="progress-dots">${Array.from({length:state.count},(_,i)=>`<span class="dot ${i<state.position?'done':i===state.position?'current':''}"></span>`).join('')}</div><p class="exam-note">1問の上限：${q.seconds}秒<br>時間切れで自動的に次へ進みます。選択しただけでは解答は確定されません。</p></div></aside></div><dialog id="quit-dialog" aria-labelledby="quit-title"><h2 id="quit-title">ここで模試を終了しますか？</h2><p>途中結果と解説を表示します。終了するとこの模試には戻れません。確認中も時間は進みます。</p><div class="actions"><button id="continue">続ける</button><button id="end-now" class="primary">終了して結果を見る</button></div></dialog>`;
+if(q.input==='numeric'){document.querySelector('#numeric-answer').oninput=e=>{state.selected=e.target.value;document.querySelector('#submit').disabled=numericValue(e.target.value)===null;};}
+app.querySelectorAll('[data-answer]').forEach(b=>b.onclick=()=>{if(Date.now()>=Math.min(state.qEnd,state.end)){tick();return}state.selected=Number(b.dataset.answer);app.querySelectorAll('[data-answer]').forEach(x=>{const on=x===b;x.classList.toggle('selected',on);x.setAttribute('aria-pressed',String(on))});document.querySelector('#submit').disabled=false;});document.querySelector('#submit').onclick=()=>{if(Date.now()>=Math.min(state.qEnd,state.end)){tick();return}record(false);};document.querySelector('#quit').onclick=()=>document.querySelector('#quit-dialog').showModal();document.querySelector('#continue').onclick=()=>document.querySelector('#quit-dialog').close();document.querySelector('#end-now').onclick=()=>finish('stopped');app.querySelector('.question-text').focus({preventScroll:true});}
+function record(expired){saveAnswer(expired);state.notice=expired?'前の問題は時間切れのため、未回答になりました。':'';next();}
+function tick(){if(!state?.active)return;const now=Date.now();if(now>=state.end){expireBlock();return}if(now>=state.qEnd){record(true);return}const remain=Math.ceil((state.qEnd-now)/1000);document.querySelector('#q-time').textContent=fmt(remain);document.querySelector('#q-time').classList.toggle('urgent',remain<=10);document.querySelector('#all-time').textContent=fmt(Math.ceil((state.end-now)/1000));document.querySelector('#time-fill').style.width=`${Math.max(0,(state.qEnd-now)/(state.current.seconds*1000)*100)}%`;}
+function finish(reason){if(!state?.active)return;if(reason==='stopped')saveAnswer(true);state.active=false;clearInterval(ticker);state.reason=reason;state.elapsed=state.elapsedPrior+(state.block<state.blocks.length?Math.min(state.blocks[state.block].seconds,(Date.now()-state.blockStart)/1000):0);renderResult();}
+
+function renderResult(){const a=state.answers;const right=a.filter(x=>x.correct).length,rate=Math.round(right/state.count*100),answered=a.filter(x=>x.selected!==null);const stats=state.parts.map(p=>({section:p.name,right:a.filter(x=>x.q.section===p.name&&x.correct).length,count:p.count}));app.innerHTML=`<p class="eyebrow">TEST RESULT</p><h1 class="page-title">${state.reason==='stopped'?'途中結果':state.reason==='time'?'制限時間に達しました':'模試、おつかれさまでした。'}</h1><p class="intro">解けた問題も、迷った問題も。解説で次の一問につなげよう。</p><section class="panel panel-body"><div class="score-layout"><div class="score-ring" style="--pct:${rate}%"><div><span>正答率</span><b>${rate}<small> %</small></b><span>${right} / ${state.count}問 正解</span></div></div><div><h2 class="panel-heading">${right>=state.count*.8?'よくできました。解く速さも確認しましょう。':right>=state.count*.5?'解き方を整理して、正確さを高めよう。':'まずは解説で、解き方を一つずつ。'}</h2><div class="metrics">${stats.map(s=>`<div><span class="muted">${s.section}</span><b>${s.right}<span class="muted"> / ${s.count}問</span></b></div>`).join('')}<div><span class="muted">所要時間</span><b>${fmt(state.elapsed)}</b></div></div><p class="muted">解答確定 ${answered.length}問 ／ 未回答・未出題 ${state.count-answered.length}問<br>正答率は全${state.count}問が分母です。SPIの得点や合否を予測するものではありません。</p></div></div><div class="result-actions"><button class="start" id="retry">別の問題で受ける <span>↻</span></button><button class="button-quiet" id="back">模試を選び直す</button></div></section><div class="filter"><h2>問題と解説 <span class="muted">${a.length}問</span></h2><label><input type="checkbox" id="wrong-only"> 不正解・未回答のみ</label></div><div id="reviews"></div>`;renderReviews(false);document.querySelector('#wrong-only').onchange=e=>renderReviews(e.target.checked);document.querySelector('#retry').onclick=start;document.querySelector('#back').onclick=home;window.scrollTo(0,0);}
+function renderReviews(only){document.querySelector('#reviews').innerHTML=state.answers.map((a,i)=>{if(only&&a.correct)return '';return `<details class="panel details review"><summary><span class="status ${a.correct?'correct':'wrong'}">${a.correct?'正解':a.selected===null?'未回答':'不正解'}</span><span class="review-title">${String(a.number).padStart(2,'0')}　${a.q.section} / ${a.q.type}</span><span class="muted">${Math.round(a.seconds)}秒</span></summary><div class="content"><p class="question-text">${esc(a.q.text)}</p><p>${a.q.input==='numeric'?'数値入力の問題':a.q.options.map((o,i)=>`${'ABCDE'[i]}. ${esc(o)}`).join('<br>')}</p><div class="answer-line">正解：${a.q.input==='numeric'?esc(a.q.numericAnswer+(a.q.unit||'')):`${'ABCDE'[a.q.answer]} ${esc(a.q.options[a.q.answer])}`}<br>あなたの解答：${a.selected===null?'未回答':a.q.input==='numeric'?esc(a.selected):`${'ABCDE'[a.selected]} ${esc(a.q.options[a.selected])}`}</div><p>${esc(a.q.explanation)}</p><span class="muted">設定：${['','基礎','標準','応用'][a.q.level]} ／ 制限 ${a.q.seconds}秒（独自設定）</span></div></details>`;}).join('')||'<p class="intro" style="margin-top:24px">不正解・未回答の問題はありません。</p>';}
+window.addEventListener('beforeunload',e=>{if(state?.active){e.preventDefault();e.returnValue='';}});
+document.querySelector('.brand').onclick=e=>{if(state?.active){e.preventDefault();document.querySelector('#quit-dialog').showModal();}};
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)tick()});home();
+
+
+</script></body></html>
